@@ -176,7 +176,7 @@ contains(USE_NATIVE, 1) {
 }
 
 contains(DEBUGLOCK, 1) {
-    message(Building march=native architecture flag)
+    message(Building with lock debug messages (set debug=net in pepecoin.conf))
     QMAKE_CXXFLAGS += -DDEBUG_LOCKORDER -DDEBUG_LOCKCONTENTION
     QMAKE_CFLAGS += -DDEBUG_LOCKORDER -DDEBUG_LOCKCONTENTION
 }
